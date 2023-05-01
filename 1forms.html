@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> Forms </title>
+    </head>
+    <body>
+        <center>
+            <h1> Forms HTML5 DATALIST </h1>
+            <form>
+                <!-- Text Input -->
+                <label> Full Name: </label>
+                <input type="text" name="fullname" placeholder="Enter Your Name.." autofocus>
+                <br><br>
+
+                <!-- Email Input -->
+                <label> Email: </label>
+                <input type="email" name="email" placeholder="Enter Your Email..">
+                <br><br>
+
+                <!-- Radio -->
+                <label> Gender: </label>
+                <input type="radio" name="gender" value="Female"> Female </input>
+                <input type="radio" name="gender" value="Male"> Male </input>
+                <br><br>
+
+                <!-- CheckBox -->
+                <label> Subjects: </label>
+                <input type="CheckBox" name="subject" value="English"> English </input>
+                <input type="CheckBox" name="subject" value="Mathematics"> Mathematics </input>
+                <input type="CheckBox" name="subject" value="Science"> Science </input>
+                <br><br>
+
+                <!-- DropDown -->
+                <label> Preferred Timings: </label>
+                <select name="timing">
+                    <option value="Morning"> Morning </option>
+                    <option value="Afternoon"> Afternoon </option>
+                    <option value="Evening"> Evening </option>
+                </select>
+                <br><br>
+
+                <!-- DATALIST -->
+                <label> Cities: </label>
+                <input list="nearbycities" name="cities">
+                <datalist id="nearbycities">
+                    <option value="Jerusalem"/>
+                    <option value="Jericho"/>
+                    <option value="Caesarea"/>
+                </datalist>
+                <datalist id="farcities">
+                    <option value="Nazareth"/>
+                    <option value="Tiberias"/>
+                    <option value="Petra"/>
+                </datalist>
+                <br><br>
+
+                <!-- Numbers-->
+                <label> Age: </label>
+                <input type="number" min="5" max="70">
+                <br><br>
+
+                <!-- Date -->
+                <label> Date of Birth: </label>
+                <input type="date" min="01-01-1950" max="01-01-2020">
+                <br><br>
+
+                <!-- Input File -->
+                <label> Upload File: </label>
+                <input type="file" name="document" select="image/png, image/jpg" multiple>
+                <!--<input type="file" name="document" select="image/*,.pdf" multiple>-->
+
+                <input type="submit" value="Register">
+  
+            </form>
+        </center>
+    </body>
+</html>
